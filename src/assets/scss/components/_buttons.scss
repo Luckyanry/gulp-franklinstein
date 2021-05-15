@@ -1,0 +1,30 @@
+.btn {
+  display: block;
+  max-width: 100%;
+  min-width: rem(220);
+  height: auto;
+  padding: 15px 45px;
+
+  font-family: inherit;
+  @include fonts(rem(24), 600, 1.2);
+
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--primary-txt-cl);
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-cl);
+
+  outline: none;
+  cursor: pointer;
+  transition: background-color var(--fast) ease;
+
+  @include mq(desktop) {
+    &:hover,
+    &:focus {
+      background-color: var(--brown-bg);
+    }
+  }
+}

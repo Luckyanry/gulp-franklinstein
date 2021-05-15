@@ -1,0 +1,37 @@
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+:root {
+  --accent-cl: #e16a29;
+  --secondary-accent-cl: #9f4615;
+
+  /* TEXT COLORS */
+  --primary-txt-cl: #fffbc1;
+  --secondary-txt-cl: #e16a29;
+  --white-txt-cl: #ffffff;
+  --gray-txt-cl: #767575;
+  --black-txt-cl: #2b2b2b;
+
+  /* BACKGROUND COLORS */
+  --primary-bg: #e16a29;
+  --primary-bg-rgba: HexToRGB(#e16a29);
+  --secondary-bg: #767575;
+  --white-bg: #ffffff;
+  --white-bg-rgb: #{HexToRGB(#ffffff)};
+  --grey-bg: HexToRGB(#2b2b2b);
+  --brown-bg: #9f4615;
+  --brown-bg-rgb: #{HexToRGB(#321809)};
+
+  /* FONTS */
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'ArchitectsDaughter', sans-serif;
+
+  --grid-item: 1;
+  --grid-mr-left: 30px;
+  --grid-mr-top: 30px;
+
+  /* ANIMATIONS SPEED */
+  --fast: 0.2s;
+  --slow: 0.4s;
+}

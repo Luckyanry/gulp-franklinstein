@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% set lang = "en" %}
+<html lang="{{ lang }}">
+{% set title = "Gulp kit" %}
+
+<head>
+  {% include 'head.html' %}
+</head>
+
+<body>
+  <div class="page">{% block content %} {% endblock %}</div>
+
+  {% include 'modal.html' %}
+
+  <script src="assets/js/app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcv7WmRE2MGYCEIdYryk0u367gTRh5C1k"></script>
+</body>
+
+</html>
